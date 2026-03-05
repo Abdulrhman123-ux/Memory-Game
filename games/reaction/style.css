@@ -1,0 +1,26 @@
+.reaction-box {
+  width: min(360px, 90vw);
+  height: 260px;
+  margin: 22px auto 10px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid #e5e7eb;
+  transition: transform 120ms ease;
+}
+
+.reaction-box:active {
+  transform: scale(0.99);
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 12px;
+}
