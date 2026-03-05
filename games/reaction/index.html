@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reaction Test</title>
+
+  <link rel="stylesheet" href="../../css/site.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">GameHub</div>
+      <nav class="nav">
+        <a href="../../index.html">Home</a>
+        <a href="../memory/index.html">Memory Game</a>
+        <a href="../reaction/index.html">Reaction Test</a>
+        <a href="../guess/index.html">Number Guess</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="container">
+        <h1>Reaction Test</h1>
+        <p>Wait until the box turns green, then click as fast as possible.</p>
+
+        <div id="box" class="reaction-box">Click to start</div>
+
+        <div class="result">
+          <div>Last: <strong id="last">—</strong></div>
+          <div>Best: <strong id="best">—</strong></div>
+        </div>
+
+        <button id="resetBest" class="btn btn-light">Reset Best</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
