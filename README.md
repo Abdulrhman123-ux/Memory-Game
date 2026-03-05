@@ -2,6 +2,10 @@
 
 A responsive memory matching game built with HTML, CSS, and JavaScript.
 
+## Screenshot
+
+![Memory Game](assets/game.png)
+
 ## Live Demo
 https://abdulrhman123-ux.github.io/Memory-Game/
 
