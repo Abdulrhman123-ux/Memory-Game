@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Number Guess</title>
+
+  <link rel="stylesheet" href="../../css/site.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">GameHub</div>
+      <nav class="nav">
+        <a href="../../index.html">Home</a>
+        <a href="../memory/index.html">Memory Game</a>
+        <a href="../reaction/index.html">Reaction Test</a>
+        <a href="../guess/index.html">Number Guess</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <div class="container">
+        <h1>Number Guess</h1>
+        <p>I picked a number between <strong>1</strong> and <strong>100</strong>. Try to guess it.</p>
+
+        <div class="guess-card">
+          <input id="guessInput" type="number" min="1" max="100" placeholder="Enter a number" />
+          <button id="guessBtn" class="btn">Guess</button>
+          <button id="newBtn" class="btn btn-light">New Game</button>
+
+          <p class="message" id="message">Good luck 🍀</p>
+          <p class="meta">Attempts: <strong id="attempts">0</strong></p>
+          <p class="meta">Best Attempts: <strong id="bestAttempts">—</strong></p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
