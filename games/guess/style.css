@@ -1,0 +1,24 @@
+.guess-card {
+  margin-top: 18px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 16px;
+  max-width: 520px;
+}
+
+#guessInput {
+  width: 180px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  margin-right: 8px;
+}
+
+.message {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.meta { margin: 6px 0 0; opacity: 0.85; }
