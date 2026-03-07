@@ -152,14 +152,8 @@ function flipCard(cardEl) {
     resetTurn();
 
   if (matchedPairs === totalPairs) {
-    playShuffleEffect();
+     stopTimer();
 
-setTimeout(() => {
-  buildBoard();
-}, 1000);
-  stopTimer();
-
-  // check + update best score
   const current = { seconds, moves };
   const best = loadBest();
 
@@ -170,12 +164,13 @@ setTimeout(() => {
 
   if (isBetter) saveBest(current);
 
-  // show modal
-  winTimeEl.textContent = formatTime(seconds);
-  winMovesEl.textContent = String(moves);
-  bestScoreEl.textContent = bestToText(loadBest());
+  playShuffleEffect();
 
-  setTimeout(openModal, 250);
+  setTimeout(() => {
+    buildBoard();
+  }, 1000);
+
+
 }
   } else {
     // not matched -> flip back after a short delay
