@@ -106,6 +106,20 @@ function resetTurn() {
   lockBoard = false;
 }
 
+function playShuffleEffect() {
+  const cards = Array.from(document.querySelectorAll(".card"));
+
+  cards.forEach((card) => {
+    const delay = Math.floor(Math.random() * 120);
+    setTimeout(() => {
+      card.classList.add("shuffle");
+    }, delay);
+  });
+
+  setTimeout(() => {
+    cards.forEach((card) => card.classList.remove("shuffle"));
+  }, 900);
+}
 function flipCard(cardEl) {
   if (lockBoard) return;
   if (cardEl.classList.contains("matched")) return;
@@ -138,6 +152,11 @@ function flipCard(cardEl) {
     resetTurn();
 
   if (matchedPairs === totalPairs) {
+    playShuffleEffect();
+
+setTimeout(() => {
+  buildBoard();
+}, 1000);
   stopTimer();
 
   // check + update best score
@@ -189,6 +208,8 @@ playAgainBtn.addEventListener("click", () => {
   closeModal();
   buildBoard();
 });
+
+
 
 closeModalBtn.addEventListener("click", closeModal);
 
