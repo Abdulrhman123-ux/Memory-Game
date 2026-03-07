@@ -1,26 +1,34 @@
 # Memory Game
 
-A responsive memory matching game built with HTML, CSS, and JavaScript.
-
-## Screenshot
-
-![Memory Game](assets/game.png)
-
-## Live Demo
-https://abdulrhman123-ux.github.io/Memory-Game/
+A browser memory matching game built with **HTML, CSS, and JavaScript**.
 
 ## Features
-- Multiple board sizes (4x2, 4x4, 6x4)
-- Timer and move counter
-- Card matching logic
-- Restart game functionality
-- Responsive UI
 
-## Technologies
+- Multiple board sizes
+- Move counter
+- Timer
+- Best score saved with localStorage
+- Restart button
+- Win modal
+- Shuffle animation
+
+## Live Demo
+
+https://abdulrhman123-ux.github.io/Memory-Game/
+
+## Screenshots
+
+(Add screenshots here)
+
+## Tech Stack
+
 - HTML
 - CSS
 - JavaScript
 
-## How to Run
-1. Clone the repository
-2. Open index.html in your browser
+## How it works
+
+1. Click a card to reveal it
+2. Find the matching pair
+3. Match all pairs to win
+4. Try to finish with the lowest moves and fastest time
