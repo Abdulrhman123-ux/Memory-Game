@@ -87,7 +87,7 @@ select {
   margin: 22px auto 40px;
   padding: 0 18px;
   display: grid;
-  gap: 12px;
+  gap: 14px;
   justify-content: center;
 }
 .card {
@@ -97,6 +97,12 @@ select {
   background: transparent;
   padding: 0;
   cursor: pointer;
+  perspective: 1000px;
+  transition: transform 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
 }
 
 .card-inner {
@@ -105,7 +111,7 @@ select {
   position: relative;
   border-radius: 14px;
   transform-style: preserve-3d;
-  transition: transform 200ms ease;
+  transition: transform 0.45s ease;
 }
 
 .card.flipped .card-inner,
@@ -123,6 +129,7 @@ select {
   user-select: none;
   backface-visibility: hidden;
   border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .card-front {
@@ -130,12 +137,21 @@ select {
   color: white;
 }
 
-.card-back {
-  background: white;
-  transform: rotateY(180deg);
+.card-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  user-select: none;
+  backface-visibility: hidden;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .card.matched .card-back {
+  background: #dcfce7;
   border-color: #22c55e;
 }
 .modal.hidden { display: none; }
@@ -185,4 +201,14 @@ select {
 
 .card.shuffle {
   animation: shuffleMove 350ms ease-in-out 2;
+}
+
+.top {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.top h1 {
+  margin-bottom: 20px;
 }
