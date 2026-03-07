@@ -111,6 +111,7 @@ select {
   position: relative;
   border-radius: 14px;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transition: transform 0.45s ease;
 }
 
@@ -128,15 +129,22 @@ select {
   font-size: 28px;
   user-select: none;
   backface-visibility: hidden;
-  border: 1px solid #e5e7eb;
+  -webkit-backface-visibility: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
+
 
 .card-front {
   background: #1d4ed8;
   color: white;
 }
 
+.card-back {
+  background: white;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  transform: rotateY(180deg);
+}
 .card-face {
   position: absolute;
   inset: 0;
@@ -146,6 +154,7 @@ select {
   font-size: 28px;
   user-select: none;
   backface-visibility: hidden;
+   -webkit-backface-visibility: hidden;
   border: 1px solid #e5e7eb;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
