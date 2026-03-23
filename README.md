@@ -18,7 +18,13 @@ https://abdulrhman123-ux.github.io/Memory-Game/
 
 ## Screenshots
 
-![Screenshot](Screenshot%202026-03-23%20144341.png)## Tech Stack
+![Screenshot 1](Screenshot%202026-03-23%20144341.png)
+![Screenshot 2](Screenshot%202026-03-23%20144402.png)
+![Screenshot 3](Screenshot%202026-03-23%20144410.png)
+![Screenshot 4](Screenshot%202026-03-23%20144414.png)
+![Screenshot 5](Screenshot%202026-03-23%20144422.png)
+
+## Tech stake
 
 - HTML
 - CSS
